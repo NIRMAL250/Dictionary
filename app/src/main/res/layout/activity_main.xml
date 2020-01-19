@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="4"
+    android:background="#f5de82">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily=""
+        android:gravity="center"
+        android:text="Dictionary"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:fontFamily="@font/dancing_script" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:weightSum="4">
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:inputType="text"
+            android:hint="Enter the word"/>
+        <Button
+            android:id="@+id/go"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight=".5"
+            android:text="Go"
+            android:background="#E41D886E"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Definition:"
+        android:paddingLeft="6dp"/>
+        <TextView
+            android:id="@+id/defn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.8"
+            android:background="#f7f2bd"
+            android:layout_margin="10dp"
+            android:text=""
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>
