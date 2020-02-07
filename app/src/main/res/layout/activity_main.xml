@@ -24,7 +24,7 @@
         android:orientation="horizontal"
         android:layout_weight="0"
         android:weightSum="4">
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/word"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
